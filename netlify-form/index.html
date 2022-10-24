@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netlify Example Form</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+      form {
+        padding: 1rem;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      form label {
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        padding: 0.5rem;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="Netlify Example Form" netlify>
+      <p>
+        <label>
+          Name:
+          <input type="text" name="name" autocomplete="off" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Email:
+          <input type="email" name="email" autocomplete="off" />
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </body>
+</html>
