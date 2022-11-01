@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="./favicon.svg" />
+    <style>
+      :root {
+        --theme-background: hsl(0, 0%, 98%);
+        --theme-on-background: hsl(0, 0%, 5%);
+      }
+
+      body {
+        background-color: var(--theme-background);
+        color: var(--theme-on-background);
+        font-family: sans-serif;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --theme-background: hsl(0, 0%, 5%);
+          --theme-on-background: hsl(0, 0%, 98%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dark Theme Favicon</h1>
+  </body>
+</html>
