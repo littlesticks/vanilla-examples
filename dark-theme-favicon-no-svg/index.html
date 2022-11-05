@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Theme Favicon No SVG</title>
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      href="./favicon.png"
+      media="(prefers-color-scheme: no-preference)"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="./favicon-dark.png"
+      media="(prefers-color-scheme: dark)"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="./favicon.png"
+      media="(prefers-color-scheme: light)"
+      type="image/png"
+    />
+    <style>
+      :root {
+        --theme-background: hsl(0, 0%, 98%);
+        --theme-on-background: hsl(0, 0%, 5%);
+      }
+
+      body {
+        background-color: var(--theme-background);
+        color: var(--theme-on-background);
+        font-family: sans-serif;
+        font-size: 3rem;
+        -webkit-text-stroke-color: var(--theme-on-background);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-fill-color: var(
+          --theme-background
+        ); /* Will override color (regardless of order) */
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --theme-background: hsl(0, 0%, 5%);
+          --theme-on-background: hsl(0, 0%, 98%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dark Theme Favicon No SVG</h1>
+  </body>
+</html>
